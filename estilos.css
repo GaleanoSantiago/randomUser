@@ -1,0 +1,104 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+:root {
+  --theme-color: #5074f3;
+}
+
+body {
+  background-color: var(--theme-color);
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+.container {
+  width: 90%;
+  max-width: 25em;
+}
+.card {
+  width: 100%;
+  padding: 4em 0;
+  background-color: #0E0F26;
+  /* background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px); */
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 2px solid #fff;
+  /* box-shadow: inset 0px 0px 15px 5px rgba(67,195,255,.2), 0px 0px 10px 1px rgba(67,195,255,.15); */
+  text-align: center;
+  border-radius: 0.5em;
+}
+.card .img-container {
+  height: 11.25em;
+  width: 11.25em;
+  display: block;
+  margin: -8.75em auto 0 auto;
+  background-color: var(--theme-color);
+  box-shadow: 0 0 0 0.3em #ffffff, 0 0 0 0.5em white;
+  border-radius: 50%;
+}
+.img-container img {
+  width: 100%;
+  border-radius: 50%;
+}
+.container button {
+  display: block;
+  font-size: 1.1em;
+  width: 70%;
+  margin: 2em auto 0 auto;
+  padding: 1.1em 0;
+  border-radius: 0.3em;
+  border: 2px solid #fff;
+  outline: none; /*mome*/
+  font-weight: 600;
+  /* color: #000341; */
+  color:#FFFCFF;
+  cursor: pointer;
+  background:#0E0F26;
+  transition: all .3s ease;
+}
+
+.container button:hover{
+  box-shadow: -12px 12px 23px -9px rgba(0,0,0,0.74);
+  -webkit-box-shadow: -12px 12px 23px -9px rgba(0,0,0,0.74);
+  -moz-box-shadow: -12px 12px 23px -9px rgba(0,0,0,0.74);
+  transition: all .3s ease;
+  transform: scale(1.05);
+}
+.container button:active{
+  transform: scale(1);
+  transition: all .07s ease;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  color:#C3C3D6;
+}
+
+.card h2 {
+  margin-top: 1.8em;
+  font-weight: 600;
+  /* color: #000341; */
+  color:#FFFCFF;
+}
+.card h3,
+.card h4 {
+  font-size: 1em;
+  letter-spacing: 0.02em;
+  margin-top: 0.5em;
+  font-weight: 300;
+  /* color: #90919e; */
+  /* color: #0E0F26; */
+  color:#6c757d;
+}
+.card i {
+  color: var(--theme-color);
+  margin-right: 0.3em;
+}
+.card h4 {
+  margin-top: 0.4em;
+}
